@@ -82,11 +82,11 @@ if !exists("no_plugin_maps") && !exists("no_taskpaper_maps")
     nnoremap <silent> <buffer> <Plug>TaskPaperMoveToProject
     \       :call taskpaper#move_to_project()<CR>
 
-" added tag '@now'
-    nnoremap <silent> <buffer> <Plug>TaskPaperShowNow
-    \       :<C-u>call taskpaper#search_tag('now')<CR>
-    nnoremap <silent> <buffer> <Plug>TaskPaperToggleNow
-    \       :call taskpaper#toggle_tag('now', '')<CR>
+" added tag '@wait'
+    nnoremap <silent> <buffer> <Plug>TaskPaperShowWait
+    \       :<C-u>call taskpaper#search_tag('wait')<CR>
+    nnoremap <silent> <buffer> <Plug>TaskPaperToggleWait
+    \       :call taskpaper#toggle_tag('wait', '')<CR>
 
     nnoremap <silent> <buffer> <Plug>TaskPaperNewline
     \       o<C-r>=taskpaper#newline()<CR>
@@ -111,9 +111,9 @@ if !exists("no_plugin_maps") && !exists("no_taskpaper_maps")
     nmap <buffer> <Leader>tt <Plug>TaskPaperToggleToday
     nmap <buffer> <Leader>tx <Plug>TaskPaperToggleCancelled
     nmap <buffer> <Leader>tm <Plug>TaskPaperMoveToProject
-" added tag @now
-    nmap <buffer> <Leader>tN <Plug>TaskPaperShowNow
-    nmap <buffer> <Leader>tn <Plug>TaskPaperToggleNow
+" added tag @wait
+    nmap <buffer> <Leader>tW <Plug>TaskPaperShowWait
+    nmap <buffer> <Leader>tw <Plug>TaskPaperToggleWait
 
     if mapcheck("o", "n") == ''
         nmap <buffer> o <Plug>TaskPaperNewline
